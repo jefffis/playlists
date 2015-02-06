@@ -1,6 +1,6 @@
 name: Tradesy Playlists
 markdown: redcarpet
-highlighter: true
+highlighter: pygments
 permalink: /:title
 site_title: The Tradesy Playlists
 site_desc: 'We love tech, and we love tunes. Here&rsquo;s a running list of tunes we dig.'

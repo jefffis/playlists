@@ -1,5 +1,5 @@
 header {
-	background: #040407;
+	background: #040407 url(../images/pattern.jpg) repeat-x;
 	margin-bottom: 2em;
 	padding: 2em;
 	text-align: center;
@@ -18,9 +18,9 @@ header img {
 	margin: auto auto 1em;
 	max-width: 50px;
 }
-header small {
-	opacity: .5;
-}
+// header small {
+// 	opacity: .5;
+// }
 h1 {
 	color: #fff;
 	letter-spacing: 2.5px;
