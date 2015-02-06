@@ -1,0 +1,27 @@
+---
+layout: index
+---
+
+{% include headerbit.html %}
+		{% for post in site.posts %}
+		<div class="playlists">
+			<h2 id="list-{{post.id}}">Posted on <span>{{post.list_date}}</span></h2>
+			{% for a in post.playlists %}
+			<div class="playlist">
+				<div>
+					<a href="{{a.url}}" target="_blank">
+						<h2>{{a.title}}</h2>
+						<p>Curated by <strong>{{a.name}}</strong></p>
+						<small>on {{a.src}}</small>
+						{% if a.img %}
+						<img src="{{a.img}}" />
+						{% else %}
+						<img src="/images/vinyls.jpg" />
+						{% endif %}
+					</a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		{% endfor %}
+{% include footerbit.html %}

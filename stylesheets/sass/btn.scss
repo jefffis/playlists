@@ -1,0 +1,41 @@
+// .btn {
+// 	background: #ff4c00;
+// 	text-decoration: none;
+// 	display: block;
+// 	text-align: center;
+// 	width: 100%;
+// 	margin: 1em 0;
+// 	line-height: 1;
+// 	padding: 1em .25em;
+// 	font-size: 1.25em;
+// 	letter-spacing: -1px;
+// 	text-shadow: 0 1px 0 rgba(0,0,0,0.15), 0 2px 1px rgba(0,0,0,0.1);
+// 	border: 2px solid rgba(0,0,0,0.15);
+// 	border-radius: 5px;
+// 	color: white;
+// 	&.mar-t {
+// 		margin-top: 2em;
+// 	}
+// }
+// .btn:hover, .btn:focus {
+// 	border-color: #8C2B01;
+// }
+// .nav:active, .btn:active {
+// 	background: #8C2B01;
+// 	color: rgba(255,255,255,0.75);
+// 	opacity: 1;
+// }
+// .history, .extras {
+// 	opacity: .75;
+// }
+// .more .history p, .more .extras p,
+// .more .history li, .more .extras li {
+// 	font-size: .85em;
+// }
+// .history ul, .history ol,
+// .extras ul, .extras ol {
+// 	padding-left: 1.25em;
+// }
+// .more .history + .extras {
+// 	padding-top: 1.5em;
+// }

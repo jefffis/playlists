@@ -1,0 +1,25 @@
+---
+layout: post
+title: Week 1
+id: 1
+list_date: 'February 13th, 2015'
+playlists:
+ - name: Jefff
+   url: '###'
+   title: 'A long playlist name is here'
+   img: 'https://styrofoamdrone.files.wordpress.com/2010/08/resized_useless_eaters.jpg'
+   src: 'Spotify'
+ - name: Jefff
+   url: '###'
+   title: 'A long playlist name is here'
+   src: 'Soundcloud'
+ - name: Jefff
+   url: '###'
+   title: 'A long playlist name is here'
+   img: 'https://styrofoamdrone.files.wordpress.com/2010/08/resized_useless_eaters.jpg'
+   src: 'Spotify'
+ - name: Jefff
+   url: '###'
+   title: 'A long playlist name is here'
+   src: 'Soundcloud'
+---

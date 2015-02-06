@@ -1,0 +1,126 @@
+.playlists {
+	margin: 1em auto 0;
+	max-width: 1100px;
+	padding: 0 2em 2em;
+	text-align: center;
+}
+.playlists span {
+	color: #ee7873;
+}
+.playlist {
+	display: inline-block;
+	padding: 1em;
+	position: relative;
+	width: 275px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.playlist > div, .playlist a {
+	box-shadow: 0 0 0 3px #040407;
+	border-radius: 3px;
+	display: table;
+	height: 250px;
+	width: 100%;
+}
+.playlist a {
+	border: 0;
+	box-shadow: none;
+	color: #040407;
+	display: table-cell;
+	overflow: hidden;
+	padding: 0 2em;
+	position: relative;
+	/*transition: all .125s ease-in-out;*/
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+}
+.playlist:after {
+	content: "";
+	background: rgba(0,0,0,0.125);
+	border-radius: 100%;
+	display: block;
+	height: 3px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 86%;
+	margin: -.825em 7% 0;
+}
+.playlist h2 {
+	display: inline-block;
+	line-height: 1;
+	margin: 0;
+	position: relative;
+}
+/*.playlist h2:after {
+	content: "";
+	display: block;
+	background: #ddd;
+	position: absolute;
+	bottom: -8px;
+	left: 0;
+	height: 2px;
+	width: 80%;
+	margin: 0 10%;
+}*/
+.playlist a * {
+	position: relative;
+	z-index: 2;
+}
+.playlist a img {
+	// opacity: .25;
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 300px;
+	// transition: all .25s ease-in-out;
+	z-index: 3;
+}
+.playlist p {
+	color: #999;
+	margin: 1em 0 0;
+}
+.playlist small {
+	color: #ccc;
+	position: absolute;
+	bottom: 1.5em;
+	right: 1.5em;
+}
+.playlist:hover a {
+	border-radius: 5px;
+}
+.playlist:hover img {
+	// transform: scale(0);
+	display: none;
+}
+.playlist:hover a, .playlist.done a {
+	background: #040407;
+	color: #ee7873;
+	transform: scale(1.1);
+}
+.playlist.done {
+	opacity: 0;
+}
+.playlist .no-b {
+	box-shadow: none;
+}
+.playlist:active a {
+	/*transition: all 0 ease-in-out;*/
+	transform: scale(.95);
+}
+.playlist:active:after {
+	display: none;
+}
+.playlist:active > div {
+	box-shadow: none;
+}
+.playlist:hover h2:after {
+	display: none;
+}
+.playlist:hover p, .playlist:hover small, .playlist:hover strong {
+	color: white;
+}
+/*.playlist:hover small, .playlist:hover strong {
+	color: #999;
+}*/
