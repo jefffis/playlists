@@ -51,15 +51,17 @@
 }
 .playlist:before {
 	content: "";
-	background: url(../images/lp.png) no-repeat;
+	background: url(../images/lp.jpg) no-repeat;
 	background-size: contain;
+	border-radius: 100%;
 	display: block;
-	height: 250px;
+	height: 230px;
+	overflow: hidden;
 	position: absolute;
-	bottom: 12px;
+	bottom: 20px;
 	right: -5px;
 	transition: right .15s ease-in-out;
-	width: 250px;
+	width: 230px;
 	z-index: 1;
 }
 .playlist h2 {
