@@ -190,18 +190,18 @@ header {
   margin-bottom: 2em;
   padding: 2em;
   text-align: center; }
-
-header img {
-  display: block;
-  margin: auto auto 1em;
-  max-width: 50px; }
-
-h1 {
-  color: #fff;
-  letter-spacing: 2.5px;
-  line-height: 1;
-  margin: 0;
-  text-transform: uppercase; }
+  header img {
+    display: block;
+    margin: auto auto 1em;
+    max-width: 50px; }
+  header h1 {
+    color: #fff;
+    letter-spacing: 2.5px;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase; }
+  header small {
+    color: rgba(255, 255, 255, 0.5); }
 
 .playlists {
   margin: 1em auto 0;
@@ -352,7 +352,7 @@ h1 {
 
   .playlists {
     max-width: 1200px;
-    padding: 0 0 2em; } }
+    padding: 2em 0; } }
 @media screen and (max-width: 20em) {
   .playlist {
     width: 100%; } }
