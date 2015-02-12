@@ -6,17 +6,17 @@ list_date: 'February 13th, 2015'
 playlists:
  - name: Jefff
    url: '###'
-   title: 'A long playlist name is here'
+   title: 'Past Wolf Parade: Spin-offs abound'
    img: 'https://styrofoamdrone.files.wordpress.com/2010/08/resized_useless_eaters.jpg'
    src: 'Spotify'
- - name: Jefff
-   url: '###'
-   title: 'A long playlist name is here'
-   src: 'Soundcloud'
- - name: Jefff
-   url: '###'
-   title: 'A long playlist name is here'
-   img: 'https://styrofoamdrone.files.wordpress.com/2010/08/resized_useless_eaters.jpg'
+ - name: Joy Jama
+   url: 'https://play.spotify.com/user/spotify/playlist/0eDq2STmk8tKcD7qWCwrze?play=true&utm_source=open.spotify.com&utm_medium=open'
+   title: 'Evening Chill'
+   src: 'Spotify'
+ - name: Steve Elmer
+   url: 'http://open.spotify.com/user/12175877261/playlist/4ALsuCHW3o4w4vcDw9GH0V'
+   title: 'DC to LA in two bands'
+   img: '/images/1/steve-elmer.jpg'
    src: 'Spotify'
  - name: Jefff
    url: '###'
