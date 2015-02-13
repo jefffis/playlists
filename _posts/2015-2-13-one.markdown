@@ -16,7 +16,7 @@ playlists:
  - name: Steve Elmer
    url: 'http://open.spotify.com/user/12175877261/playlist/4ALsuCHW3o4w4vcDw9GH0V'
    title: 'DC to LA in two bands'
-   img: '/images/1/steve-elmer.jpg'
+   img: 'images/1/steve-elmer.jpg'
    src: 'Spotify'
  - name: Robert Manukyan
    url: 'http://www.rdio.com/people/RobertManukyan0130/playlists/12788485/RobMan_Tunes/'
