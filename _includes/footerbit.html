@@ -15,14 +15,12 @@
 			var links = document.querySelectorAll('.plst a'),
 				links_tote = links.length;
 			for(var i = 0; i < links_tote; i++){
-				if(getCookie('no-rick')){
-					return;
+				if(!getCookie('no-rick')){
+					links[i].onclick = function(){
+						SetCookie('no-rick',1);
+					}
+					links[i].setAttribute('href','https://www.youtube.com/watch?v=dQw4w9WgXcQ&noredirect=1');
 				}
-				links[i].onclick = function(){
-					alert();
-					SetCookie('no-rick',1);
-				}
-				links[i].setAttribute('href','https://www.youtube.com/watch?v=dQw4w9WgXcQ&noredirect=1');
 			}
 		</script>
 	</body>
