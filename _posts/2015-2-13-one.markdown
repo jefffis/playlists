@@ -7,7 +7,7 @@ playlists:
  - name: Jefff
    url: '###'
    title: 'Past Wolf Parade: Spin-offs abound'
-   img: 'https://styrofoamdrone.files.wordpress.com/2010/08/resized_useless_eaters.jpg'
+   img: 'http://cdn.stereogum.com/files/2008/04/wolf_parade-call_it_a_ritual.jpg'
    src: 'Spotify'
  - name: Joy Jama
    url: 'https://play.spotify.com/user/spotify/playlist/0eDq2STmk8tKcD7qWCwrze?play=true&utm_source=open.spotify.com&utm_medium=open'
@@ -18,8 +18,16 @@ playlists:
    title: 'DC to LA in two bands'
    img: '/images/1/steve-elmer.jpg'
    src: 'Spotify'
- - name: Jefff
-   url: '###'
-   title: 'A long playlist name is here'
-   src: 'Soundcloud'
+ - name: Robert Manukyan
+   url: 'http://www.rdio.com/people/RobertManukyan0130/playlists/12788485/RobMan_Tunes/'
+   title: 'Robman Tunes'
+   src: 'Rdio'
+ - name: Namela Kim
+   url: 'http://grooveshark.com/#!/playlist/Fashion/102956652'
+   title: 'Fashion Playlist'
+   src: 'Grooveshark'
+ - name: Ryan Nance
+   url: 'http://www.youtube.com/playlist?list=PLSit519x334iGSMmwU1dnWbu4uJr-83iR'
+   title: 'The shuffle of aspen one morning'
+   src: 'YouTube'
 ---

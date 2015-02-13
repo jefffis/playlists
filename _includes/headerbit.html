@@ -10,7 +10,16 @@
     </head>
     <body>
         <header>
-            <img src="images/gem-white.png" alt="Tradesy: buy &amp; sell clothes online" />
+            <!-- <img src="images/gem-white.png" alt="Tradesy: buy &amp; sell clothes online" />
             <h1>{{site.site_title}}</h1>
-            <small>{{site.site_desc}}</small>
+            <small>{{site.site_desc}}</small> -->
+            <a href="/">
+                <img src="images/logo.png" class="logo" />
+            </a>
+            {% for post in site.posts limit:1 %}
+            <small>
+                <a href="#list-{{post.id}}">{{post.title}}</a>, posted on <span>{{post.list_date}}</span>
+            </small>
+            {% endfor %}
+            <!-- <img src="images/header.jpg" /> -->
         </header>

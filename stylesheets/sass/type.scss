@@ -14,16 +14,16 @@
 }
 
 html, body {
-	// background: #efefef;
+	background: #323232;
 	color: #949d99;
 	font: normal 100%/1.5 'proxima-nova-regular', sans-serif;
 	height: auto;
 	min-height: 100%;
 	width: 100%;
 }
-// body {
-// 	padding: 2em 1em;
-// }
+body {
+	padding: 2em;
+}
 strong {
 	font-family: 'proxima-nova-semi', sans-serif;
 	font-weight: normal;
@@ -37,4 +37,11 @@ h1, h2 {
 }
 strong {
 	color: #040407;
+}
+a {
+	color: #ee7873;
+}
+h4 {
+	padding-top: 2em;
+	text-align: center;
 }
