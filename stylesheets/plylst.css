@@ -212,13 +212,18 @@ h5 {
 header small {
   display: block;
   max-width: 100px;
-  margin: 1em auto 4em; }
+  margin: 1em auto 4em;
+  text-align: center; }
+  header small a {
+    display: inline-block; }
 
 .playlists {
   text-align: center; }
 
 .playlists > h2 {
-  text-transform: uppercase; }
+  letter-spacing: -.5px;
+  font-size: 1rem;
+  margin-bottom: 2rem; }
 
 .playlists > h2 small {
   display: block;
@@ -227,7 +232,7 @@ header small {
   text-transform: none; }
 
 .playlists span {
-  color: #ee7873; }
+  color: #fdebcb; }
 
 .playlist {
   display: inline-block;
@@ -420,6 +425,9 @@ header small {
 
   body {
     padding: 4rem; }
+
+  .playlists {
+    text-align: left; }
 
   .plst {
     max-width: 30em;

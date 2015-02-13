@@ -5,10 +5,10 @@ layout: index
 {% include headerbit.html %}
 		{% for post in site.posts %}
 		<div class="playlists" id="list-{{post.id}}">
-			<!-- <h2 id="list-{{post.id}}">
-				{{post.title}}
-				<small>Posted on <span>{{post.list_date}}</span>; {% for a in post.playlists %}{{forloop.length}}{% break %}{% endfor %} playlists added.</small>
-			</h2> -->
+			<h2 id="list-{{post.id}}">
+				{{post.title}} published on <span>{{post.list_date}}</span>
+				<!-- <small>Posted on <span>{{post.list_date}}</span>; {% for a in post.playlists %}{{forloop.length}}{% break %}{% endfor %} playlists added.</small> -->
+			</h2>
 			{% for a in post.playlists %}
 			<div class="plst">
 				<a href="{{a.url}}" target="_blank">

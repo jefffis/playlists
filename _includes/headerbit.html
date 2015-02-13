@@ -16,9 +16,9 @@
             <a href="/">
                 <img src="images/logo.png" class="logo" />
             </a>
-            {% for post in site.posts limit:1 %}
+            {% for post in site.posts %}
             <small>
-                <a href="#list-{{post.id}}">{{post.title}}</a>, posted on <span>{{post.list_date}}</span>.
+                <a href="#list-{{post.id}}">{{post.title}}</a>
             </small>
             {% endfor %}
             <!-- <img src="images/header.jpg" /> -->

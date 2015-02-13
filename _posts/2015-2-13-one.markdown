@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week 1
+title: Tuneslist 1
 id: 1
 list_date: 'February 13th, 2015'
 playlists:

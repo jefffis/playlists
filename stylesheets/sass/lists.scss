@@ -5,7 +5,10 @@
 	text-align: center;
 }
 .playlists > h2 {
-	text-transform: uppercase;
+	// text-transform: uppercase;
+	letter-spacing: -.5px;
+	font-size: 1rem;
+	margin-bottom: 2rem;
 }
 .playlists > h2 small {
 	display: block;
@@ -14,7 +17,7 @@
 	text-transform: none;
 }
 .playlists span {
-	color: #ee7873;
+	color: #fdebcb;
 }
 .playlist {
 	display: inline-block;
