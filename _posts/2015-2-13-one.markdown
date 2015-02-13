@@ -5,7 +5,7 @@ id: 1
 list_date: 'February 13th, 2015'
 playlists:
  - name: Jefff
-   url: '###'
+   url: 'http://open.spotify.com/user/jefffis/playlist/0JGJIKPhqNHxietupYrxS5'
    title: 'Past Wolf Parade: Spin-offs abound'
    img: 'http://cdn.stereogum.com/files/2008/04/wolf_parade-call_it_a_ritual.jpg'
    src: 'Spotify'
