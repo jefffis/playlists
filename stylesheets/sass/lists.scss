@@ -6,7 +6,7 @@
 }
 .playlists > h2 {
 	// text-transform: uppercase;
-	letter-spacing: -.5px;
+	letter-spacing: -.25px;
 	font-size: 1rem;
 	margin-bottom: 2rem;
 }
@@ -227,10 +227,14 @@
 	margin-bottom: .5rem;
 	text-transform: capitalize;
 }
-.dets h2:after {
-	content: ".";
+// .dets h2:after {
+// 	content: ".";
+// }
+.dets p {
+	color: #6b6b6b;
+	line-height: 1.2;
 }
-.dets p, .dets strong {
+.dets strong {
 	color: white;
 	line-height: 1.2;
 }

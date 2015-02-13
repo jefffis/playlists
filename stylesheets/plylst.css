@@ -181,6 +181,7 @@ a {
   color: #ee7873; }
 
 h4 {
+  letter-spacing: -.25px;
   padding-top: 2em;
   text-align: center; }
 
@@ -189,6 +190,7 @@ h4 strong {
   font-weight: normal; }
 
 h5 {
+  letter-spacing: -.25px;
   padding-top: .75em;
   text-align: center; }
 
@@ -221,7 +223,7 @@ header small {
   text-align: center; }
 
 .playlists > h2 {
-  letter-spacing: -.5px;
+  letter-spacing: -.25px;
   font-size: 1rem;
   margin-bottom: 2rem; }
 
@@ -402,10 +404,11 @@ header small {
   margin-bottom: .5rem;
   text-transform: capitalize; }
 
-.dets h2:after {
-  content: "."; }
+.dets p {
+  color: #6b6b6b;
+  line-height: 1.2; }
 
-.dets p, .dets strong {
+.dets strong {
   color: white;
   line-height: 1.2; }
 

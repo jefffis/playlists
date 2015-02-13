@@ -30,4 +30,13 @@ playlists:
    url: 'http://www.youtube.com/playlist?list=PLSit519x334iGSMmwU1dnWbu4uJr-83iR'
    title: 'The shuffle of aspen one morning'
    src: 'YouTube'
+ - name: Victor Barrera
+   url: 'http://www.youtube.com/playlist?list=PLP1NWMQKr5vtL-9CuP6dlYNW_uvWai8lv'
+   title: 'It Ain&rsquo;t Kidz Bop Tho Vol. 1'
+   img: 'images/1/victor-barrera.jpg'
+   src: 'YouTube'
+ - name: Monica Caprarella
+   url: 'http://open.spotify.com/user/123664279/playlist/3xFQDRgH9oAaFEiXrQS8I5'
+   title: 'Sampler'
+   src: 'Spotify'
 ---
