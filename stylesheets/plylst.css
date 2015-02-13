@@ -184,6 +184,14 @@ h4 {
   padding-top: 2em;
   text-align: center; }
 
+h4 strong {
+  color: #fdebcb;
+  font-weight: normal; }
+
+h5 {
+  padding-top: .75em;
+  text-align: center; }
+
 @font-face {
   font-family: 'proxima-nova-semi';
   src: url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.eot");
@@ -436,7 +444,7 @@ header small {
     width: 27%;
     text-align: right; }
 
-  h4 {
+  h4, h5 {
     text-align: left; } }
 @media screen and (min-width: 49em) {
   .plst {
