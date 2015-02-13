@@ -186,11 +186,12 @@ h4 {
   text-align: center; }
 
 h4 strong {
-  color: #fdebcb;
+  color: white;
   font-weight: normal; }
 
 h5 {
   letter-spacing: -.25px;
+  margin-bottom: 0;
   padding-top: .75em;
   text-align: center; }
 
