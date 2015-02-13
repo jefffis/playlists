@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tuneslist 1
+title: Tuneslist, the first
 id: 1
 list_date: 'February 13th, 2015'
 playlists:
@@ -38,5 +38,17 @@ playlists:
  - name: Monica Caprarella
    url: 'http://open.spotify.com/user/123664279/playlist/3xFQDRgH9oAaFEiXrQS8I5'
    title: 'Sampler'
+   src: 'Spotify'
+ - name: Phil Woods
+   url: 'https://play.spotify.com/album/4cPNeJTCwhYoJJ8sfqLOCB'
+   title: 'Typhoon - 13. Post Script'
+   src: 'Spotify'
+ - name: Kristin
+   url: 'http://open.spotify.com/user/123990834/playlist/2jWRGj5fTDEk26iHzzgHeJ'
+   title: 'Big Gigantic, Cherub - 19. The Night Is Young (feat. Cherub)'
+   src: 'Spotify'
+ - name: Marisa DeHoyos
+   url: 'http://open.spotify.com/user/1247929713/playlist/1xVoEly5NJWUSXmyWxyRaY'
+   title: 'Killer Top Secret Playlist'
    src: 'Spotify'
 ---
