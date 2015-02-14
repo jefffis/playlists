@@ -51,4 +51,12 @@ playlists:
    url: 'http://open.spotify.com/user/1247929713/playlist/1xVoEly5NJWUSXmyWxyRaY'
    title: 'Killer Top Secret Playlist'
    src: 'Spotify'
+ - name: Eliza Shamshian
+   url: ' http://open.spotify.com/user/elizainhollywood/playlist/1e4vIq87FSbMSBjFqeT5n6'
+   title: 'Migos - 21. Versace'
+   src: 'Spotify'
+ - name: Justin Russikoff
+   url: 'http://open.spotify.com/user/12642074/playlist/2nw9bnmAcErtvuFpWMyFSy'
+   title: 'Lettuce - 200. Squadlive'
+   src: 'Spotify'
 ---
