@@ -18,6 +18,7 @@
 				if(!getCookie('no-rick')){
 					links[i].onclick = function(){
 						SetCookie('no-rick',1);
+						location.reload();
 					}
 					links[i].setAttribute('href','https://www.youtube.com/watch?v=dQw4w9WgXcQ&noredirect=1');
 				}
