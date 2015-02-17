@@ -59,4 +59,12 @@ playlists:
    url: 'http://open.spotify.com/user/12642074/playlist/2nw9bnmAcErtvuFpWMyFSy'
    title: 'Lettuce - 200. Squadlive'
    src: 'Spotify'
+ - name: Fred Heidbrink
+   url: 'http://open.spotify.com/track/5P6vo51dtkBYWXswH1twvK'
+   title: 'Snarky Puppy – Lingus'
+   src: 'Spotify'
+ - name: Danielle Hruska
+   url: 'https://play.spotify.com/user/1233098644/playlist/1jW8H1s1yJUEiaJbbXxRCl'
+   title: 'Comp'
+   src: 'Spotify'
 ---
