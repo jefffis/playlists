@@ -23,7 +23,10 @@ layout: index
 					</div>
 					<div class="dets">
 						<h2>{{a.title}}</h2>
-						<p>Curated by <strong>{{a.name}}</strong> on {{a.src}}.</p>
+						<p>
+							Curated by <strong>{{a.name}}</strong> on {{a.src}}.
+							{% if post.playlists != null %}<small>{% for t in a.p_tags %}<em>{{t.ptag}}</em>{% endfor %}</small>{% endif %}
+						</p>
 					</div>
 				</a>
 			</div>

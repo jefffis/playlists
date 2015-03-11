@@ -13,6 +13,7 @@ playlists:
     - ptag: folk
  - name: Ryan Nance
    url: 'https://soundcloud.com/5thingsilearnedtoday/sets/february-finds'
+   img: 'images/2/jellyfish.png'
    title: 'These Things Do Go Together'
    src: 'Soundcloud'
    p_tags: 
