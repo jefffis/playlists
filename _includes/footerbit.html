@@ -161,7 +161,8 @@
 
 			search.on('submit', function(e) {
 				e.preventDefault();
-				
+
+				input.blur();
 				search.removeClass('show');
 				plst.removeClass('hide');
 				$('h2').removeClass('hide');
@@ -190,9 +191,9 @@
 				$('body').on('swipeleft', function() {
 					if(!search.hasClass('show')){
 						search.addClass('show');
-						setTimeout(function() {
-							input.focus();
-						}, 100);
+						// setTimeout(function() {
+						// 	input.focus();
+						// }, 100);
 					}
 				});
 				// $('body').on('swiperight', function() {
