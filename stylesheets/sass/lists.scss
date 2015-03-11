@@ -292,6 +292,7 @@
 		box-sizing: border-box;
 		background: white;
 		border: 0;
+		-webkit-border-radius: 3px;
 		border-radius: 3px;
 		font-size: 2rem;
 		line-height: 1;
@@ -299,6 +300,7 @@
 		max-width: 30rem;
 		outline: none;
 		padding: 1.5rem;
+		-webkit-appearance: none;
 		width: 100%;
 		&:focus {
 			box-shadow: 0 0 0 3px #323232, 0 0 0 6px #ee7873;
