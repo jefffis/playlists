@@ -100,11 +100,7 @@
 				console.log(filteredLists, numFilters);
 
 				if(!!f){
-					if(f>1){
-						playlistsNum.html('Hot diggity; we found '+e+' playlists; <a class="show-results">Go!</a>');
-					}else{
-						playlistsNum.html('Fabulous; we found one playlist; <a class="show-results">Go!</a>');
-					}
+					playlistsNum.html('Hot diggity; we found '+e+'; <a class="show-results">Go!</a>');
 				}else{
 					playlistsNum.html('<p id="playlists-num">Shucks, no playlists found; <a class="show-results">D&rsquo;oh</a>');
 				}
