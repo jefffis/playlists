@@ -3,11 +3,12 @@ layout: index
 ---
 
 {% include headerbit.html %}
+	<div class="playlist-wrap">
 		{% for post in site.posts %}
 		<div class="playlists" id="list-{{post.id}}">
 			<h2 id="list-{{post.id}}">
 				{{post.title}} published on <span>{{post.list_date}}</span>
-				( {% for a in post.playlists %}{{forloop.length}}{% break %}{% endfor %} playlists ).
+				({% for a in post.playlists %}{{forloop.length}}{% break %}{% endfor %} playlists).
 				<!-- <small>Posted on <span>{{post.list_date}}</span>; {% for a in post.playlists %}{{forloop.length}}{% break %}{% endfor %} playlists added.</small> -->
 			</h2>
 			{% for a in post.playlists %}
@@ -29,4 +30,5 @@ layout: index
 			{% endfor %}
 		</div>
 		{% endfor %}
+	</div>
 {% include footerbit.html %}

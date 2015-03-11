@@ -21,9 +21,9 @@ html, body {
 	min-height: 100%;
 	width: 100%;
 }
-body {
-	padding: 2em;
-}
+// body {
+// 	padding: 2em 2em 4em;
+// }
 strong {
 	font-family: 'proxima-nova-semi', sans-serif;
 	font-weight: normal;
@@ -55,4 +55,7 @@ h5 {
 	margin-bottom: 0;
 	padding-top: .75em;
 	text-align: center;
+}
+.hide {
+	display: none;
 }

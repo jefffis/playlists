@@ -1,0 +1,28 @@
+---
+layout: post
+title: Tuneslist, the second
+id: 2
+list_date: 'March 13th, 2015'
+playlists:
+ - name: Philip Woods
+   url: 'http://open.spotify.com/user/1278187812/playlist/080RdYlHwRi6yvHjMBjgHT'
+   title: 'faukx'
+   src: 'Spotify'
+   p_tags: 
+    - ptag: fauxk
+    - ptag: folk
+ - name: Ryan Nance
+   url: 'https://soundcloud.com/5thingsilearnedtoday/sets/february-finds'
+   title: 'These Things Do Go Together'
+   src: 'Soundcloud'
+   p_tags: 
+    - ptag: remix
+    - ptag: hiphop
+ - name: Namella Kim
+   url: 'http://grooveshark.com/#!/playlist/Fun/78733752'
+   title: 'Shoulder Pads and Aqua Ne'
+   src: 'Grooveshark'
+   p_tags: 
+    - ptag: 80s
+    - ptag: spazz
+---

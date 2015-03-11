@@ -8,17 +8,32 @@
 
 @media screen and (min-width: 44em){
 
+#mbl-srch {
+	display: none;
+}
+#notification {
+	text-align: left;
+	.cls {
+		cursor: pointer;
+		display: inline-block;
+		float: right;
+		position: relative;
+		top: -.5rem;
+		right: .25rem;
+	}
+}
+
 header {
 	margin: 0;
 	position: fixed;
-	top: 3.5em;
+	top: 5.5em;
 	right: 1.5em;
 	z-index: 2;
 }
 .logo {
 	margin-top: 0;
 }
-body {
+.playlist-wrap {
 	padding: 4rem;
 }
 .playlists {

@@ -12,14 +12,19 @@
 					<fieldset>
 						<label for="search-me">
 							<span>Search by tag:</span>
-							<input type="search" id="search-me" placeholder="Search playlists tag(s)" />
+							<input type="search" id="search-me" placeholder="Search playlists by tag" />
 							<p id="playlists-num" class="biggie"></p>
 							<!-- <p>Comma separate multiple tags.</p> -->
+							<span class="clr" id="clr"></span>
 						</label>
 					</fieldset>
+					<span class="cls" id="cls"></span>
 				</form>	
 			</div>
 		</div>
+		<a id="mbl-srch">
+			Search by tag
+		</a>
 		<!--<script>
 			function SetCookie(cookieName,cookieValue) {
 				document.cookie = cookieName+"="+escape(cookieValue)
@@ -41,9 +46,43 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script>
 		$(function(){
+
+			function SetCookie(cookieName,cookieValue) {
+				document.cookie = cookieName+"="+escape(cookieValue)
+				+ ";expires=Sun, 17 Jan 2038 19:14:07 GMT; path=/";
+			}
+
+			function getCookie(name) {
+			    var dc = document.cookie;
+			    var prefix = name + "=";
+			    var begin = dc.indexOf("; " + prefix);
+			    if (begin == -1) {
+			        begin = dc.indexOf(prefix);
+			        if (begin != 0) return null;
+			    }
+			    else
+			    {
+			        begin += 2;
+			        var end = document.cookie.indexOf(";", begin);
+			        if (end == -1) {
+			        end = dc.length;
+			        }
+			    }
+			    return unescape(dc.substring(begin + prefix.length, end));
+			}
+
+			if(!getCookie('hide-search-note')){
+				$('#notification').removeClass('hide');
+			}
+
+			$('#note-cls').on('click', function() {
+				SetCookie('hide-search-note',1);
+				$(this).parent().hide();
+			});
+
 			function checkTag(e) {
 				var lists = $('body').find(e).length;
-				// console.log('class:' + e, lists);
+				console.log('class:' + e, lists);
 
 				if(lists>0){
 					showResults(lists,true,e);
@@ -56,15 +95,15 @@
 				filteredLists = g;
 				numFilters = e;
 				console.log(filteredLists, numFilters);
-				// $('#playlists-num').remove();
+
 				if(!!f){
 					if(f>1){
-						playlistsNum.html('Hot diggity; we found '+e+' playlists. <a class="show-results">Tunes away!</a>');
+						playlistsNum.html('Hot diggity; we found '+e+' playlists; <a class="show-results">Go!</a>');
 					}else{
-						playlistsNum.html('Fabulous; we found one playlist. <a class="show-results">Tunes away!</a>');
+						playlistsNum.html('Fabulous; we found one playlist; <a class="show-results">Go!</a>');
 					}
 				}else{
-					playlistsNum.html('<p id="playlists-num">Shucks, no playlists found. <a class="show-results">Close me</a>');
+					playlistsNum.html('<p id="playlists-num">Shucks, no playlists found; <a class="show-results">D&rsquo;oh</a>');
 				}
 			}
 
@@ -78,14 +117,48 @@
 			input.on('keyup', function() {
 				var listClass = $(this).val();
 				checkTag('.'+listClass);
+				if(!!listClass!=''){
+					$('#clr').addClass('show');
+				}else{
+					$('#clr').removeClass('show');
+				}
+			});
+
+			$('#clr').on('click', function() {
+				$(this).removeClass('show');
+				input.val('').focus();
+				playlistsNum.html('');
+				$('h2').removeClass('hide');
+				plst.removeClass('hide');
+				// $('#mbl-srch').removeClass('hide');
+			});
+
+			$('#cls').on('click', function() {
+				search.removeClass('show');
+				$('h2').removeClass('hide');
+				plst.removeClass('hide');
+				$('#mbl-srch').removeClass('hide');
+			});
+
+			$('#mbl-srch').on('click', function() {
+				search.addClass('show');
+				input.focus();
+				$(this).addClass('hide');
 			});
 
 			$('body').on('click', '.show-results', function() {
 				search.removeClass('show');
 				plst.removeClass('hide');
+				$('h2').removeClass('hide');
+				$('#mbl-srch').removeClass('hide');
 				if(!!numFilters>0){
+					console.log('showing '+filteredLists);
+					$('h2').addClass('hide');
 					plst.addClass('hide');
 					$('body').find(filteredLists).removeClass('hide');
+					$('html,body').animate({
+						scrollTop: $(filteredLists+':first').offset().top - 50
+					}, 250);
 				}
 			});
 
@@ -95,8 +168,13 @@
 					setTimeout(function() {
 						input.focus();
 					}, 100);
-					// e.preventDefault();
-					// e.stopPropagation();
+				}
+			});
+
+			$(document).keydown(function(e) {
+				if((e.keyCode===27)&&(!!search.hasClass('show'))){
+					search.removeClass('show');
+					plst.removeClass('hide');
 				}
 			});
 		});

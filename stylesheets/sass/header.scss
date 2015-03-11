@@ -6,11 +6,48 @@
 header {
 	small {
 		display: block;
+		line-height: 1;
 		max-width: 100px;
-		margin: 1em auto 4em;
+		margin: 1em auto;
 		text-align: center;
+		&:last-child {
+			margin-bottom: 3rem;
+		}
 		a {
 			display: inline-block;
+		}
+	}
+}
+#notification {
+	background: #EFEAA8;
+	color: #333;
+	// left: 0;
+	line-height: 1;
+	padding: .5rem;
+	position: relative;
+	// top: 0;
+	text-align: center;
+	// width: 100%;
+	.tag {
+		background: #333;
+		border-radius: 3px;
+		color: white;
+		display: inline-block;
+		margin-right: .5rem;
+		padding: .35rem .5rem;
+	}
+	.cls {
+		display: block;
+		margin-top: 1rem;
+		&:before {
+			content: "Close ";
+			font-size: .75rem;
+			position: relative;
+			top: -2px;
+		}
+		&:after {
+			content: "\2715";
+			font-family: sans-serif;
 		}
 	}
 }

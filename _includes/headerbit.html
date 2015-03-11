@@ -25,6 +25,11 @@
         <link rel="shortcut icon" href="images/favicon.png" />
     </head>
     <body>
+        <div id="notification" class="hide">
+            <span class="tag">NEW</span>
+            Search by tag. Type &lsquo;s&rsquo; or click the button (on mobile) to begin.
+            <span class="cls" id="note-cls"></span>
+        </div>
         <header>
             <!-- <img src="images/gem-white.png" alt="Tradesy: buy &amp; sell clothes online" />
             <h1>{{site.site_title}}</h1>
@@ -34,7 +39,7 @@
             </a>
             {% for post in site.posts %}
             <small>
-                <a href="#list-{{post.id}}">{{post.title}}</a>
+                <a href="#list-{{post.id}}">{{post.id}}</a>
             </small>
             {% endfor %}
             <!-- <img src="images/header.jpg" /> -->
