@@ -22,9 +22,9 @@
 				</form>	
 			</div>
 		</div>
-		<a id="mbl-srch">
+		<!-- <a id="mbl-srch">
 			Search by tag
-		</a>
+		</a> -->
 		<!--<script>
 			function SetCookie(cookieName,cookieValue) {
 				document.cookie = cookieName+"="+escape(cookieValue)
@@ -44,8 +44,11 @@
 			}
 		</script>-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="/javascripts/swipe.js"></script>
 		<script>
 		$(function(){
+
+			// $.getScript('/javascripts/swipe.js');
 
 			function SetCookie(cookieName,cookieValue) {
 				document.cookie = cookieName+"="+escape(cookieValue)
@@ -170,6 +173,24 @@
 					}, 100);
 				}
 			});
+
+			if($(window).width()<800){
+				$('body').on('swipeleft', function() {
+					if(!search.hasClass('show')){
+						search.addClass('show');
+						setTimeout(function() {
+							input.focus();
+						}, 100);
+					}
+				});
+				// $('body').on('swiperight', function() {
+				// 	if(!!search.hasClass('show')){
+				// 		search.removeClass('show');
+				// 		plst.removeClass('hide');
+				// 		$('h2').removeClass('hide');
+				// 	}
+				// });
+			}
 
 			$(document).keydown(function(e) {
 				if((e.keyCode===27)&&(!!search.hasClass('show'))){
