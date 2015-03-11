@@ -374,6 +374,8 @@ header small {
   max-width: 300px;
   overflow: hidden;
   position: relative; }
+  .plst.hide {
+    display: none; }
 
 .plst:hover {
   box-shadow: 0 0 0 2px #323232, 0 0 0 6px #7dccad; }
@@ -412,6 +414,62 @@ header small {
 .dets strong {
   color: white;
   line-height: 1.2; }
+
+#search-form {
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100; }
+  #search-form.show {
+    display: table; }
+  #search-form div {
+    display: table-cell;
+    height: 100%;
+    padding: 1rem;
+    width: 100%;
+    vertical-align: middle; }
+  #search-form form {
+    border: 0;
+    border-radius: 3px;
+    margin: auto;
+    max-width: 30rem;
+    overflow: hidden;
+    padding: 0; }
+  #search-form fieldset {
+    border: 0; }
+  #search-form span {
+    display: none; }
+  #search-form input {
+    box-sizing: border-box;
+    background: white;
+    border: 0;
+    border-radius: 3px;
+    font-size: 2rem;
+    line-height: 1;
+    margin: auto;
+    max-width: 30rem;
+    outline: none;
+    padding: 1.5rem;
+    width: 100%; }
+    #search-form input:focus {
+      box-shadow: 0 0 0 3px #323232, 0 0 0 6px #ee7873; }
+  #search-form p {
+    color: white;
+    margin-top: 1rem;
+    text-align: center; }
+    #search-form p:last-child {
+      margin-bottom: 0; }
+  #search-form .biggie {
+    font-size: 1.25rem;
+    font-family: 'proxima-nova-semi', sans-serif;
+    font-weight: normal; }
+  #search-form a {
+    cursor: pointer;
+    text-decoration: underline; }
 
 @media screen and (min-width: 40em) {
   .plst {

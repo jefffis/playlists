@@ -9,6 +9,9 @@ playlists:
    title: 'Past Wolf Parade: Spin-offs abound'
    img: 'http://cdn.stereogum.com/files/2008/04/wolf_parade-call_it_a_ritual.jpg'
    src: 'Spotify'
+   p_tags: 
+    - ptag: indie
+    - ptag: rock
  - name: Joy Jama
    url: 'https://play.spotify.com/user/spotify/playlist/0eDq2STmk8tKcD7qWCwrze?play=true&utm_source=open.spotify.com&utm_medium=open'
    title: 'Evening Chill'

@@ -192,6 +192,9 @@
 	max-width: 300px;
 	overflow: hidden;
 	position: relative;
+	&.hide {
+		display: none;
+	}
 }
 .plst:hover {
 	box-shadow: 0 0 0 2px #323232, 0 0 0 6px #7dccad;
@@ -237,4 +240,74 @@
 .dets strong {
 	color: white;
 	line-height: 1.2;
+}
+
+#search-form {
+	background: rgba(0,0,0,0.75);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	&.show {
+		display: table;
+	}
+	div {
+		display: table-cell;
+		height: 100%;
+		padding: 1rem;
+		width: 100%;
+		vertical-align: middle;
+	}
+	form {
+		// background: white;
+		border: 0;
+		border-radius: 3px;
+		margin: auto;
+		max-width: 30rem;
+		overflow: hidden;
+		padding: 0;
+		// padding: 1rem;
+	}
+	fieldset {
+		border: 0;
+	}
+	span {
+		display: none;
+	}
+	input {
+		box-sizing: border-box;
+		background: white;
+		border: 0;
+		border-radius: 3px;
+		font-size: 2rem;
+		line-height: 1;
+		margin: auto;
+		max-width: 30rem;
+		outline: none;
+		padding: 1.5rem;
+		width: 100%;
+		&:focus {
+			box-shadow: 0 0 0 3px #323232, 0 0 0 6px #ee7873;
+		}
+	}
+	p {
+		color: white;
+		margin-top: 1rem;
+		text-align: center;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.biggie {
+		font-size: 1.25rem;
+		font-family: 'proxima-nova-semi', sans-serif;
+		font-weight: normal;
+	}
+	a {
+		cursor: pointer;
+		text-decoration: underline;
+	}
 }

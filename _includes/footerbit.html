@@ -6,6 +6,20 @@
 				Designed / built by <a href="http://twitter.com/jefffis" target="_blank">Jefff</a>.
 			</h5>
 		</footer>
+		<div id="search-form">
+			<div>
+				<form>
+					<fieldset>
+						<label for="search-me">
+							<span>Search by tag:</span>
+							<input type="search" id="search-me" placeholder="Search playlists tag(s)" />
+							<p id="playlists-num" class="biggie"></p>
+							<!-- <p>Comma separate multiple tags.</p> -->
+						</label>
+					</fieldset>
+				</form>	
+			</div>
+		</div>
 		<!--<script>
 			function SetCookie(cookieName,cookieValue) {
 				document.cookie = cookieName+"="+escape(cookieValue)
@@ -24,5 +38,68 @@
 				}
 			}
 		</script>-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script>
+		$(function(){
+			function checkTag(e) {
+				var lists = $('body').find(e).length;
+				// console.log('class:' + e, lists);
+
+				if(lists>0){
+					showResults(lists,true,e);
+				}else{
+					showResults(lists,false,e);
+				}
+			}
+
+			function showResults(e,f,g) {
+				filteredLists = g;
+				numFilters = e;
+				console.log(filteredLists, numFilters);
+				// $('#playlists-num').remove();
+				if(!!f){
+					if(f>1){
+						playlistsNum.html('Hot diggity; we found '+e+' playlists. <a class="show-results">Tunes away!</a>');
+					}else{
+						playlistsNum.html('Fabulous; we found one playlist. <a class="show-results">Tunes away!</a>');
+					}
+				}else{
+					playlistsNum.html('<p id="playlists-num">Shucks, no playlists found. <a class="show-results">Close me</a>');
+				}
+			}
+
+			var plst = $('.plst'),
+				search = $('#search-form'),
+				input = search.find('input'),
+				filteredLists = null,
+				numFilters = 0,
+				playlistsNum = $('#playlists-num');
+
+			input.on('keyup', function() {
+				var listClass = $(this).val();
+				checkTag('.'+listClass);
+			});
+
+			$('body').on('click', '.show-results', function() {
+				search.removeClass('show');
+				plst.removeClass('hide');
+				if(!!numFilters>0){
+					plst.addClass('hide');
+					$('body').find(filteredLists).removeClass('hide');
+				}
+			});
+
+			$(document).keydown(function(e) {
+				if((e.keyCode===83)&&(!search.hasClass('show'))){
+					search.addClass('show');
+					setTimeout(function() {
+						input.focus();
+					}, 100);
+					// e.preventDefault();
+					// e.stopPropagation();
+				}
+			});
+		});
+		</script>
 	</body>
 </html>

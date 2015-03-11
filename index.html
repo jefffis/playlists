@@ -11,7 +11,7 @@ layout: index
 				<!-- <small>Posted on <span>{{post.list_date}}</span>; {% for a in post.playlists %}{{forloop.length}}{% break %}{% endfor %} playlists added.</small> -->
 			</h2>
 			{% for a in post.playlists %}
-			<div class="plst" id="sublist-{{post.id}}-{{a.name}}">
+			<div class="plst{% if post.playlists != null %} {% for t in a.p_tags %}{{t.ptag}} {% endfor %}{% endif %}" id="sublist-{{post.id}}-{{a.name}}">
 				<a href="{{a.url}}" target="_blank">
 					<div class="img">
 						{% if a.img %}
