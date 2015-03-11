@@ -249,6 +249,9 @@ header small {
       content: "\2715";
       font-family: sans-serif; }
 
+footer {
+  padding: 2rem 2rem 4rem; }
+
 .playlist-wrap {
   padding: 2em 2em 4em; }
 
@@ -588,6 +591,9 @@ header small {
 
   .playlist-wrap {
     padding: 4rem; }
+
+  footer {
+    padding-left: 4rem; }
 
   .playlists {
     text-align: left; }
