@@ -29,7 +29,7 @@ playlists:
  - name: Jefff
    url: 'https://open.spotify.com/user/jefffis/playlist/1QtcCMJQE6E6QCiiQugoSk'
    img: 'images/2/chick-rock-rules.jpg'
-   title: 'Chick Rock Rules'
+   title: 'Lady Rock Rules'
    src: 'Spotify'
    p_tags: 
     - ptag: girls
