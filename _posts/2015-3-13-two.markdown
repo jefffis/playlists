@@ -52,4 +52,8 @@ playlists:
    src: 'Spotify'
    p_tags: 
     - ptag: 90s
+ - name: Monica Caprarella
+   url: 'http://open.spotify.com/user/123664279/playlist/4YVW7tPw2ocwPjHx2ibHZ3'
+   title: '...'
+   src: 'Spotify'
 ---
