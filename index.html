@@ -12,7 +12,7 @@ layout: index
 				<!-- <small>Posted on <span>{{post.list_date}}</span>; {% for a in post.playlists %}{{forloop.length}}{% break %}{% endfor %} playlists added.</small> -->
 			</h2>
 			{% for a in post.playlists %}
-			<div class="plst{% if post.playlists != null %} {% for t in a.p_tags %}{{t.ptag}} {% endfor %}{% endif %}" id="sublist-{{post.id}}-{{a.name}}">
+			<div class="plst{% if a.p_tags != null %} {% for t in a.p_tags %}{{t.ptag | downcase}} {% endfor %}{% endif %}" id="sublist-{{post.id}}-{{a.name}}">
 				<a href="{{a.url}}" target="_blank">
 					<div class="img">
 						{% if a.img %}
@@ -25,7 +25,7 @@ layout: index
 						<h2>{{a.title}}</h2>
 						<p>
 							Curated by <strong>{{a.name}}</strong> on {{a.src}}.
-							{% if post.playlists != null %}<small>{% for t in a.p_tags %}<em>{{t.ptag}}</em>{% endfor %}</small>{% endif %}
+							{% if a.p_tags != null %}<small>{% for t in a.p_tags %}<em>{{t.ptag}}</em>{% endfor %}</small>{% endif %}
 						</p>
 					</div>
 				</a>

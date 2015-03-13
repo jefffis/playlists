@@ -14,8 +14,8 @@
 							<span>Search by tag:</span>
 							<input type="search" id="search-me" placeholder="Search playlists by tag" autocapitalize="off" />
 							<p id="playlists-num" class="biggie"></p>
-							<!-- <p>Comma separate multiple tags.</p> -->
-							<span class="clr" id="clr"></span>
+							<p>Use <code>esc</code> to toggle the search.</p>
+							<!-- <span class="clr" id="clr"></span> -->
 						</label>
 					</fieldset>
 					<span class="cls" id="cls"></span>
@@ -112,29 +112,31 @@
 				playlistsNum = $('#playlists-num');
 
 			input.on('keyup', function() {
-				var listClass = $(this).val();
-				checkTag('.'+listClass);
-				if(!!listClass!=''){
-					$('#clr').addClass('show');
-				}else{
-					$('#clr').removeClass('show');
+				var listClass = $(this).val().toLowerCase();
+				if($(this).val()!=''){
+					checkTag('.'+listClass);
+					if(!!listClass!=''){
+						$('#clr').addClass('show');
+					}else{
+						$('#clr').removeClass('show');
+					}
 				}
 			});
 
-			$('#clr').on('click', function() {
-				$(this).removeClass('show');
-				input.val('').focus();
-				playlistsNum.html('');
-				$('h2').removeClass('hide');
-				plst.removeClass('hide');
-				// $('#mbl-srch').removeClass('hide');
-			});
+			// $('#clr').on('click', function() {
+			// 	$(this).removeClass('show');
+			// 	input.val('').focus();
+			// 	playlistsNum.html('');
+			// 	$('h2').removeClass('hide');
+			// 	plst.removeClass('hide');
+			// 	// $('#mbl-srch').removeClass('hide');
+			// });
 
 			$('#cls').on('click', function() {
 				search.removeClass('show');
 				$('h2').removeClass('hide');
 				plst.removeClass('hide');
-				$('#mbl-srch').removeClass('hide');
+				// $('#mbl-srch').removeClass('hide');
 			});
 
 			// $('#mbl-srch').on('click', function() {
@@ -206,9 +208,17 @@
 			}
 
 			$(document).keydown(function(e) {
-				if((e.keyCode===27)&&(!!search.hasClass('show'))){
-					search.removeClass('show');
-					plst.removeClass('hide');
+				if(e.keyCode===27){
+					if(!!search.hasClass('show')){
+						search.removeClass('show');
+						input.blur();
+						// plst.removeClass('hide');
+					}else{
+						search.addClass('show');
+						setTimeout(function() {
+							input.focus();
+						}, 100);
+					}
 				}
 			});
 		});

@@ -34,4 +34,22 @@ playlists:
    p_tags: 
     - ptag: girls
     - ptag: rock
+ - name: Victor Barrera
+   url: 'http://open.spotify.com/user/bluebx/playlist/11alYSSBubu1YdNQxWRqyp'
+   img: 'images/2/kidzbop.jpg'
+   title: 'It Ain&rsquo;t Kidz Bop Tho Vol. 2'
+   src: 'Spotify'
+   p_tags: 
+    - ptag: Kanye
+ - name: Fred Heidbrink
+   url: 'http://open.spotify.com/user/toburywithin/playlist/0dnTqZc3nEqMT53QioQEvT'
+   title: 'Artisan Dreamer'
+   src: 'Spotify'
+ - name: Steve Elmer
+   url: 'https://open.spotify.com/user/12175877261/playlist/7pOQPfkZkVUW851TFqWdeB'
+   img: 'images/2/90s.jpg'
+   title: 'We love the 90s'
+   src: 'Spotify'
+   p_tags: 
+    - ptag: 90s
 ---
