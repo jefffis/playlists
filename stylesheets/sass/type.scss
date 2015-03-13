@@ -59,3 +59,10 @@ h5 {
 .hide {
 	display: none;
 }
+code {
+	background: rgba(0,0,0,0.1);
+	border-radius: 2px;
+	box-shadow: 0 0 0 2px currentColor inset;
+	display: inline-block;
+	padding: .25rem .45rem;
+}

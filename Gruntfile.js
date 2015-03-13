@@ -31,7 +31,8 @@ module.exports= function(grunt){
 				},
 				'files': [{
 					'src': 'stylesheets/<%= pkg.file_name %>.css',
-					'dest': 'stylesheets/<%= pkg.file_name %>.min.css'
+					'dest': 'stylesheets/<%= pkg.file_name %>.min.css',
+					'dest': '_includes/<%= pkg.file_name %>.min.css'
 				}]
 			}
 		},
