@@ -15,7 +15,7 @@
 							<input type="search" id="search-me" placeholder="Search playlists by tag" autocapitalize="off" />
 							<p id="playlists-num" class="biggie"></p>
 							<p>Use <code>esc</code> to toggle the search.</p>
-							<!-- <span class="clr" id="clr"></span> -->
+							<span class="clr" id="clr"></span>
 						</label>
 					</fieldset>
 					<span class="cls" id="cls"></span>
@@ -123,14 +123,14 @@
 				}
 			});
 
-			// $('#clr').on('click', function() {
-			// 	$(this).removeClass('show');
-			// 	input.val('').focus();
-			// 	playlistsNum.html('');
-			// 	$('h2').removeClass('hide');
-			// 	plst.removeClass('hide');
-			// 	// $('#mbl-srch').removeClass('hide');
-			// });
+			$('#clr').on('click', function() {
+				$(this).removeClass('show');
+				input.val('').focus();
+				playlistsNum.html('');
+				$('h2').removeClass('hide');
+				plst.removeClass('hide');
+				// $('#mbl-srch').removeClass('hide');
+			});
 
 			$('#cls').on('click', function() {
 				search.removeClass('show');
@@ -212,7 +212,9 @@
 					if(!!search.hasClass('show')){
 						search.removeClass('show');
 						input.blur();
-						// plst.removeClass('hide');
+						if(input.val()==''){
+							plst.removeClass('hide');
+						}
 					}else{
 						search.addClass('show');
 						setTimeout(function() {
