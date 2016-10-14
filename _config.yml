@@ -1,7 +1,7 @@
-name: Tradesy Playlists
+name: Playlists
 markdown: redcarpet
 highlighter: pygments
 permalink: /:title
-site_title: Tunes by Tradesy
+site_title: Tunes
 site_desc: 'We love tech, and we love tunes. Here&rsquo;s a running list of tunes we&rsquo; diggin&rsquo;.'
 #minify_html: false
